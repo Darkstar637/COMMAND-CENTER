@@ -15,4 +15,16 @@ jobs:
         with:
           node-version: 24
       - run: npm install
-      - run: npm run build
+      - name: Build
+        run: |
+          set +e
+          npm run build 2>&1 | tee build.log
+          code=${PIPESTATUS[0]}
+          echo "BUILD_EXIT_CODE=$code" >> build.log
+          exit $code
+      - name: Upload build log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-log
+          path: build.log
