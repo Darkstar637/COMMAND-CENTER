@@ -13,3 +13,14 @@ svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke
  .sidebar .brand{margin-bottom:28px}.side-nav{display:grid;gap:5px}.side-nav button,.settings-link{display:flex;align-items:center;gap:11px;border:1px solid transparent;background:transparent;color:#85869d;padding:11px 12px;border-radius:9px;text-align:left;font-size:11px}.side-nav button svg,.settings-link svg{width:17px;height:17px}.side-nav button:hover,.side-nav button.active{background:#17132a;border-color:#302052;color:#c8aeff}.settings-link{margin-top:auto}.settings-link:hover{color:var(--text)}.topbar{display:none}.mobile-brand{display:none}.content{margin-left:230px;width:auto;max-width:1250px;padding:38px 46px}.bottom-nav{display:none}
 }
 @media(max-width:699px){.page-head{position:relative}.page-head h1{font-size:19px}.server-card{padding:13px}.link-grid{gap:8px}.link-card{min-height:90px}.primary.small{font-size:9px}}
+
+/* V3 visual polish */
+.page-head>button:not(.primary){display:grid;place-items:center;width:34px;height:34px;border:1px solid var(--border);background:#121322;color:#cfc5ed;border-radius:9px;font-size:18px;cursor:pointer}
+.page-head>button:not(.primary):hover{background:#21183a;border-color:#51348a;color:#fff}
+button{cursor:pointer}.section-head button,.card-head button{border:0;background:transparent}.outline:hover{background:#21163a;border-color:#6b43b7;color:#fff}.search:hover{border-color:#51348a;background:#121323}.server-card:hover{border-color:#5a3b91;background:linear-gradient(145deg,#151128,#0e1020)}
+.side-nav button svg,.settings-link svg,.bottom-nav svg,.menu-icon svg,.link-icon svg{color:currentColor}
+.pc-overview{display:flex;align-items:center;gap:15px;padding:18px;margin-bottom:12px;background:linear-gradient(145deg,#15132a,#0d0e18);border:1px solid var(--border);border-radius:14px}.pc-chip{width:58px;height:58px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(145deg,#7540df,#39206d);color:#fff}.pc-chip svg{width:28px;height:28px}.pc-overview h2{margin:2px 0 5px;font-size:19px}.pc-overview p{margin:0}.detail-row{min-height:43px}.detail-row b{line-height:1.45}
+.card-head h2 svg{color:var(--purple2)}
+.server-art svg{width:30px;height:30px;color:#d3b9ff}.big-art svg{width:62px;height:62px;color:#d7c2ff}
+.primary:hover{background:#8b5cf6;border-color:#8b5cf6}.add-btn:hover{transform:translateY(-1px)}
+@media(max-width:699px){.pc-overview{padding:14px}.pc-overview h2{font-size:16px}.detail-row{align-items:flex-start}.detail-row b{max-width:60%}}
