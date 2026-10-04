@@ -21,5 +21,5 @@ export const featureDefaults=[
   {id:"academics",name:"Academics",icon:"book",enabled:true},
   {id:"tasks",name:"Weekly Tasks",icon:"check",enabled:true},
   {id:"digigold",name:"DigiGold",icon:"gold",enabled:true},
-  {id:"minecraft",name:"VoidReign",icon:"pickaxe",enabled:true}
+  {id:"minecraft",name:"VoidReign",icon:"minecraft",enabled:true}
 ];
