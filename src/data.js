@@ -1,0 +1,3 @@
+export const links=[["GitHub","https://github.com/","◈"],["Google Drive","https://drive.google.com/","◆"],["School Portal","#","▣"],["YouTube","https://youtube.com/","▶"],["Discord","#","◉"],["Minecraft","#","⛏"]];
+export const subjects=[["Mathematics",62],["Physics",71],["Chemistry",80],["Biology",90]];
+export const defaultTasks=[{id:1,title:"Complete Chemistry revision",done:true,priority:"high"},{id:2,title:"Update Snipex website",done:true,priority:"medium"},{id:3,title:"Organize project files",done:false,priority:"low"},{id:4,title:"Mathematics PYQs",done:false,priority:"high"},{id:5,title:"Physics revision",done:false,priority:"high"}];
