@@ -4,7 +4,7 @@ const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fa
 const state={links:read("snipex_links",seedLinks),tasks:read("snipex_tasks",defaultTasks),features:read("snipex_features",featureDefaults)};
 const save=()=>{localStorage.setItem("snipex_tasks",JSON.stringify(state.tasks));localStorage.setItem("snipex_links",JSON.stringify(state.links));localStorage.setItem("snipex_features",JSON.stringify(state.features));};
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const validUrl=u=>/^https?:\\/\\//i.test(u);
+const validUrl=u=>/^https?:\/\//i.test(u);
 const icon=n=>({search:"⌕",menu:"☰",home:"⌂",link:"↗",monitor:"▣",book:"▤",check:"✓",gold:"◉",pickaxe:"⛏",settings:"⚙",github:"◈",drive:"◆",school:"▣",youtube:"▶",discord:"◉",minecraft:"⛏",trash:"⌫"}[n]||"•");
 const bar=v=>`<div class="progress"><span style="width:${v}%"></span></div>`;
 const card=(title,body,action="")=>`<article class="card"><div class="card-head"><h2>${title}</h2>${action}</div>${body}</article>`;
